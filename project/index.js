@@ -19,10 +19,7 @@ const switchRoute = require('./routes/switchroute')
 const Devis = require('./routes/devisRoute')
 const app = express();
 
-app.use(cors({
-  origin: 'http://localhost:5173' , // Update with your frontend URL
-  credentials: true
-}));
+app.use(cors())
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
