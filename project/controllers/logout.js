@@ -3,11 +3,11 @@ const jwt = require("jsonwebtoken");
 const logout = (req, res) => {
     
    res.clearCookie("userSave", {
-    httpOnly: true, // Secure cookie
-    sameSite: "None", // Cross-site cookies
-    secure: true, // HTTPS only
-    domain: "front-flame-psi.vercel.app", // Frontend domain
-    path: "/", // Path of the cookie
+    httpOnly: true, 
+    sameSite: "None", 
+    secure: true, 
+    domain: "dzartisansapp.onrender.com", 
+    path: "/", /
 });
     
     
