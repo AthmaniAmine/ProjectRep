@@ -8,7 +8,7 @@ const logout = (req, res) => {
         sameSite:'None',
          secure:true ,
          domain:"front-flame-psi.vercel.app",
-        path: '/'
+         path: '/'
     });
     
     
