@@ -27,7 +27,7 @@ function UserGreeting({ isSignedUp, isJoined, user, notifications, messages }) {
   const handleLogout = async () => {
     try {
       
-      const response = await axios.post('http://localhost:4000/auth/logout', {}, { withCredentials: true });
+      const response = await axios.post('https://dzartisansapp.onrender.com/auth/logout', {}, { withCredentials: true });
 
     if (response.status === 200) {
       alert('Logged out successfully');
