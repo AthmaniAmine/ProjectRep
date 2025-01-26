@@ -7,7 +7,7 @@ const logout = (req, res) => {
     sameSite: "None", 
     secure: true, 
     domain: "front-flame-psi.vercel.app",
-    path: "/", 
+    
 });
     
 res.status(200).send("Cookie cleared!");
