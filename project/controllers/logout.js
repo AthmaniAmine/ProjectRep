@@ -2,7 +2,7 @@ const jwt = require("jsonwebtoken");
 
 const logout = (req, res) => {
     
-    res.cookie('userSave', '', {
+    res.cookie('userSave', null, {
         expires: new Date(0), 
         httpOnly: false,
         sameSite:'None',
