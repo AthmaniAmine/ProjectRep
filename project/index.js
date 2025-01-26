@@ -20,8 +20,7 @@ const Devis = require('./routes/devisRoute')
 const app = express();
 
 const corsOptions = {
- origin: "https://front-flame-psi.vercel.app", // Frontend URL
-    credentials: true, // Allow cookies to be sent
+origin: 'https://front-flame-psi.vercel.app', methods: ['GET', 'POST', 'PUT', 'DELETE'], allowedHeaders: ['Content-Type', 'Authorization'], credentials: true,
 };
 
 app.use(cors(corsOptions))
