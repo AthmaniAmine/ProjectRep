@@ -6,11 +6,11 @@ const logout = (req, res) => {
     httpOnly: true, 
     sameSite: "None", 
     secure: true, 
-    
+    domain: "front-flame-psi.vercel.app",
     path: "/", 
 });
     
-    
+res.status(200).send("Cookie cleared!");
 }
 
 module.exports = logout;
