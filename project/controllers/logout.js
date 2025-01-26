@@ -7,7 +7,7 @@ const logout = (req, res) => {
     sameSite: "None", 
     secure: true, 
     domain: "dzartisansapp.onrender.com", 
-    path: "/", /
+    path: "/", 
 });
     
     
