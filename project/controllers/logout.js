@@ -6,12 +6,11 @@ const logout = (req, res) => {
     httpOnly: true, 
     sameSite: "None", 
     secure: true, 
-    domain: "dzartisansapp.onrender.com", 
+    
     path: "/", 
 });
     
     
-    res.status(200).json({ status: "success", message: "User logout successfully" });
 }
 
 module.exports = logout;
