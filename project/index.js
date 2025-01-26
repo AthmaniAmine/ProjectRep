@@ -19,7 +19,14 @@ const switchRoute = require('./routes/switchroute')
 const Devis = require('./routes/devisRoute')
 const app = express();
 
-app.use(cors())
+const corsOptions = {
+  origin: 'https://front-flame-psi.vercel.app', 
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], 
+  allowedHeaders: ['Content-Type', 'Authorization'], 
+  credentials: true, 
+};
+
+app.use(cors(corsOptions))
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
