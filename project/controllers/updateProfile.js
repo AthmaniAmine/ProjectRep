@@ -19,15 +19,8 @@ const submitForm = async (req, res) => {
     description,
   } = req.body;
   const file = req.file 
-  const profilePicturePath = `${req.protocol}://${req.get('host')}/uploads/${file.filename }`
-  const query = 'UPDATE profilsartisans SET photo_de_profil = ? WHERE id = ?';
-  const query2 = 'UPDATE utilisateurs SET photo_de_profil = ? WHERE id = ?';
-  if (req.user.type_utilisateur == "artisan"){
-    await db.query(query, [profilePicturePath, req.user.id]);
-    await db.query(query2, [profilePicturePath, req.user.id])
-  }else{
-    await db.query(query2, [profilePicturePath, req.user.id])
-  }
+  
+ 
   try {
   
     await pool.query(
